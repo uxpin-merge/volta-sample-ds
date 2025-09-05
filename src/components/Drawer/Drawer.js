@@ -1,8 +1,6 @@
 import DrawerM from '@mui/material/Drawer';
 import PropTypes from 'prop-types';
 import React from 'react';
-import Box from '../Box/Box';
-import { v4 as uuidv4 } from 'uuid';
 
 /**
  * @uxpinuseportal props.variant === "temporary"
@@ -10,38 +8,18 @@ import { v4 as uuidv4 } from 'uuid';
  * @uxpindescription The navigation drawers (or "sidebars") provide ergonomic access to destinations in a site or app functionality such as switching accounts.
  */
 export default function Drawer(props) {
-  const [open, setOpen] = React.useState(props.open);
-
-  React.useEffect(() => setOpen(props.open), [props]);
-
   return (
-    // <DrawerM
-    //   open={open}
-    //   onClose={() => setOpen(false)}
-    //   TransitionProps={{ tabIndex: 'null' }}
-    //   disablePortal={true}
-    //   style={{ minWidth: '300px', minHeight: '300px', width: '100%', height: '100%' }}
-    //   ModalProps={{
-    //     keepMounted: false,
-    //     tabIndex: 'null'
-    //   }}
-
-    //   {...props}
-    // >
-    //   {props.children}
-    // </DrawerM>
-
     <DrawerM
       {...props}
-      onBlur={() => setOpen(false)}
-      open={open}
-      disableEnforceFocus
-      style={{ width: '100%', height: '100%' }}
+      onBlur={(e) => {
+        if (props.onBlur) {
+          props.onBlur(e);
+        }
 
+        props.uxpinOnChange(true, false, 'open');
+      }}
     >
-      <div>
-        {props.children}
-      </div>
+      {props.children}
     </DrawerM>
 
 
