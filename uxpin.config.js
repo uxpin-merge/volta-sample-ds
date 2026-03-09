@@ -218,10 +218,16 @@ module.exports = {
     wrapper: 'src/components/UXPinWrapper/UXPinWrapper.js',
     webpackConfig: 'webpack.config.js',
   },
-  name: 'MUI-UXPin-Merge',
+  name: 'Volta Design Sytem',
   settings: {
     useUXPinProps: true,
     useConvertingToUXPinClassic: true,
-    useIcons: { iconMap: 'https://uc.uxpin.com/mui-icons.json', component: 'MaterialIcon'}
+    useIcons: { iconMap: 'https://uc.uxpin.com/mui-icons.json', component: 'MaterialIcon'},
+    useAI: {
+      name: 'Volta Design Sytem',
+      documentationUrl: 'https://mui.com/material-ui',
+      systemPrompt: '' }
   },
 };
+
+
