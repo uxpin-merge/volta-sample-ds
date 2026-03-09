@@ -226,7 +226,7 @@ module.exports = {
     useAI: {
       name: 'Volta Design Sytem',
       documentationUrl: 'https://mui.com/material-ui',
-      systemPrompt: '' }
+      systemPrompt: 'Always use the default theme provided by this integration unless the user explicitly specifies a different theme.' }
   },
 };
 
