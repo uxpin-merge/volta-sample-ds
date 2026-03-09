@@ -226,7 +226,7 @@ module.exports = {
     useAI: {
       name: 'Volta Design Sytem',
       documentationUrl: 'https://mui.com/material-ui',
-      systemPrompt: 'Always use the default theme provided by this integration unless the user explicitly specifies a different theme.' }
+      systemPrompt: 'Volta Design System is rooted in MUI and follows MUI component APIs. Use Volta integration components first for all UI generation, and only use raw HTML elements when no suitable integration component exists. Use the default theme provided by this integration unless the user explicitly specifies a different theme. Refer to MUI documentation for component behavior and props, but output components available in this integration whenever possible.' }
   },
 };
 
