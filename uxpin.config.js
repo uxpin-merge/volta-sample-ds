@@ -226,7 +226,7 @@ module.exports = {
     useAI: {
       name: 'Volta Design Sytem',
       documentationUrl: 'https://mui.com/material-ui',
-      systemPrompt: 'Volta Design System is rooted in MUI and follows MUI component APIs. Use Volta integration components first for all UI generation, and only use raw HTML elements when no suitable integration component exists. Use the default theme provided by this integration unless the user explicitly specifies a different theme. Refer to MUI documentation for component behavior and props, but output components available in this integration whenever possible.' }
+      systemPrompt: 'Volta Design System is rooted in MUI and follows MUI component APIs. For every request, generate UI with components from this Volta integration first. Treat raw HTML as a last resort and do not use native HTML tags (div, span, p, h1-h6, button, input, section, article, ul, li, table, tr, td) unless the user explicitly asks for raw HTML or no matching integration component exists. Use the default theme provided by this integration unless the user explicitly specifies a different theme. Refer to MUI documentation for behavior and prop conventions, but always map output to components that exist in this integration. Choose the most semantically appropriate integration components for structure, layout, typography, data display, inputs, navigation, feedback, and surfaces in all generations.' }
   },
 };
 
