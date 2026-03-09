@@ -27,7 +27,7 @@ const addFont = (link) => {
   document.head.appendChild(newFontLink);
 };
 
-addFont('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+addFont('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap');
 
 
 //global theme object for all wrapper instances
