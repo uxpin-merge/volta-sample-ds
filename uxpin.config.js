@@ -225,7 +225,7 @@ module.exports = {
     useIcons: { iconMap: 'https://uc.uxpin.com/mui-icons.json', component: 'MaterialIcon'},
     useAI: {
       name: 'Volta Design Sytem',
-      documentationUrl: 'https://mui.com/material-ui',
+      documentationUrl: 'https://app.uxpin.com/design-system/1a4206a72d2e41cd20ab/merge',
       systemPrompt: 'Volta Design System is rooted in MUI and follows MUI component APIs. For every request, first map the intent to Volta integration components and their props. Use Html* components only as a strict fallback when no suitable Volta component exists, or when the user explicitly requests raw HTML. Never choose Html* components if an equivalent Volta component is available. Do not use native HTML tags (div, span, p, h1-h6, button, input, section, article, ul, li, table, tr, td) unless explicitly requested. Use the default theme provided by this integration unless the user explicitly specifies a different theme. Refer to MUI documentation for behavior and prop conventions, but always output components that exist in this integration. Choose the most semantically appropriate integration components for structure, layout, typography, data display, inputs, navigation, feedback, and surfaces in all generations.' }
   },
 };
