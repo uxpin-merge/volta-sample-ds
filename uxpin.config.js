@@ -116,23 +116,6 @@ module.exports = {
         ],
       },
       {
-        name: 'HTML (FALLBACK ONLY)',
-        include: [
-          'src/components/UXPinProvided/HtmlComponents/HtmlHeading/HtmlHeading.jsx',
-          'src/components/UXPinProvided/HtmlComponents/HtmlText/HtmlText.jsx',
-          'src/components/UXPinProvided/HtmlComponents/HtmlDiv/HtmlDiv.jsx',
-          'src/components/UXPinProvided/HtmlComponents/HtmlList/HtmlList.jsx',
-          'src/components/UXPinProvided/HtmlComponents/HtmlListItem/HtmlListItem.jsx',
-          'src/components/UXPinProvided/HtmlComponents/HtmlTable/HtmlTable.jsx',
-          'src/components/UXPinProvided/HtmlComponents/HtmlTableHead/HtmlTableHead.jsx',
-          'src/components/UXPinProvided/HtmlComponents/HtmlTableBody/HtmlTableBody.jsx',
-          'src/components/UXPinProvided/HtmlComponents/HtmlTableHeading/HtmlTableHeading.jsx',
-          'src/components/UXPinProvided/HtmlComponents/HtmlTableRow/HtmlTableRow.jsx',
-          'src/components/UXPinProvided/HtmlComponents/HtmlTableCell/HtmlTableCell.jsx',
-          'src/components/UXPinProvided/HtmlComponents/HtmlTag/HtmlTag.jsx',
-        ],
-      },
-      {
         name: 'UTILITIES',
         include: [
           'src/components/ThemeCustomizer/ThemeCustomizer.js',
